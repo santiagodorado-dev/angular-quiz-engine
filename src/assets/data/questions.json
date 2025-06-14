@@ -1,0 +1,770 @@
+{
+  "biologia": {
+    "id": "biologia",
+    "name": "Biología y Geología",
+    "description": "Explora los misterios de la vida y la Tierra",
+    "image": "assets/images/biologia.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Cuál es el proceso por el cual las plantas convierten la luz solar en energía química?",
+        "options": [
+          "Fotosíntesis",
+          "Respiración celular",
+          "Fermentación",
+          "Digestión"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/fotosintesis.jpg"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué estructura celular es responsable de la producción de energía en las células eucariotas?",
+        "options": [
+          "Núcleo",
+          "Mitocondria",
+          "Ribosoma",
+          "Aparato de Golgi"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/mitocondria.jpg"
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es el tipo de roca que se forma por la acumulación y compactación de sedimentos?",
+        "options": [
+          "Ígnea",
+          "Metamórfica",
+          "Sedimentaria",
+          "Volcánica"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/roca-sedimentaria.jpg"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué proceso geológico es responsable de la formación de montañas?",
+        "options": [
+          "Erosión",
+          "Tectónica de placas",
+          "Sedimentación",
+          "Meteorización"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/tectonica.jpg"
+      },
+      {
+        "id": 5,
+        "question": "¿Cuál es el sistema del cuerpo humano responsable de la producción de hormonas?",
+        "options": [
+          "Sistema nervioso",
+          "Sistema endocrino",
+          "Sistema digestivo",
+          "Sistema circulatorio"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/endocrino.jpg"
+      },
+      {
+        "id": 6,
+        "question": "¿Qué tipo de célula es responsable de la respuesta inmune específica?",
+        "options": [
+          "Glóbulos rojos",
+          "Linfocitos",
+          "Plaquetas",
+          "Neutrófilos"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/linfocitos.jpg"
+      },
+      {
+        "id": 7,
+        "question": "¿Cuál es el proceso por el cual los organismos mantienen un ambiente interno estable?",
+        "options": [
+          "Metabolismo",
+          "Homeostasis",
+          "Adaptación",
+          "Evolución"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/homeostasis.jpg"
+      },
+      {
+        "id": 8,
+        "question": "¿Qué estructura del ojo es responsable de la visión en color?",
+        "options": [
+          "Córnea",
+          "Retina",
+          "Conos",
+          "Bastones"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/ojos.jpg"
+      },
+      {
+        "id": 9,
+        "question": "¿Cuál es el proceso por el cual las especies cambian a lo largo del tiempo?",
+        "options": [
+          "Adaptación",
+          "Evolución",
+          "Mutación",
+          "Selección natural"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/evolucion.jpg"
+      },
+      {
+        "id": 10,
+        "question": "¿Qué tipo de ecosistema tiene la mayor biodiversidad?",
+        "options": [
+          "Desierto",
+          "Selva tropical",
+          "Tundra",
+          "Pradera"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/selva.jpg"
+      }
+    ]
+  },
+  "geografia": {
+    "id": "geografia",
+    "name": "Geografía e Historia",
+    "description": "Descubre el mundo y su historia",
+    "image": "assets/images/geografia.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Cuál es el país más grande del mundo por superficie?",
+        "options": [
+          "China",
+          "Estados Unidos",
+          "Rusia",
+          "Canadá"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/rusia.jpg"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué civilización antigua construyó las pirámides de Giza?",
+        "options": [
+          "Romanos",
+          "Griegos",
+          "Egipcios",
+          "Mayas"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/piramides.jpg"
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es el océano más grande del mundo?",
+        "options": [
+          "Atlántico",
+          "Índico",
+          "Pacífico",
+          "Ártico"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/pacifico.jpg"
+      },
+      {
+        "id": 4,
+        "question": "¿En qué año comenzó la Primera Guerra Mundial?",
+        "options": [
+          "1914",
+          "1918",
+          "1939",
+          "1945"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/ww1.jpg"
+      },
+      {
+        "id": 5,
+        "question": "¿Qué montaña es la más alta del mundo?",
+        "options": [
+          "K2",
+          "Monte Everest",
+          "Aconcagua",
+          "Kilimanjaro"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/everest.jpg"
+      },
+      {
+        "id": 6,
+        "question": "¿Cuál fue la primera civilización de la historia?",
+        "options": [
+          "Griega",
+          "Mesopotámica",
+          "Egipcia",
+          "China"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/mesopotamia.jpg"
+      },
+      {
+        "id": 7,
+        "question": "¿Qué desierto es el más grande del mundo?",
+        "options": [
+          "Sahara",
+          "Gobi",
+          "Antártico",
+          "Atacama"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/antartico.jpg"
+      },
+      {
+        "id": 8,
+        "question": "¿En qué año cayó el Muro de Berlín?",
+        "options": [
+          "1987",
+          "1989",
+          "1991",
+          "1993"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/muro.jpg"
+      },
+      {
+        "id": 9,
+        "question": "¿Qué río es el más largo del mundo?",
+        "options": [
+          "Amazonas",
+          "Nilo",
+          "Misisipi",
+          "Yangtsé"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/nilo.jpg"
+      },
+      {
+        "id": 10,
+        "question": "¿Cuál fue la primera democracia de la historia?",
+        "options": [
+          "Roma",
+          "Atenas",
+          "Esparta",
+          "Cartago"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/atenas.jpg"
+      }
+    ]
+  },
+  "lengua": {
+    "id": "lengua",
+    "name": "Lengua Castellana y Literatura",
+    "description": "Explora el poder de las palabras",
+    "image": "assets/images/lengua.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
+        "options": [
+          "Miguel de Cervantes",
+          "Federico García Lorca",
+          "Gabriel García Márquez",
+          "Pablo Neruda"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/cervantes.jpg"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué figura literaria consiste en la repetición de sonidos al final de los versos?",
+        "options": [
+          "Metáfora",
+          "Rima",
+          "Hipérbole",
+          "Personificación"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/rima.jpg"
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es el género literario que narra hechos ficticios?",
+        "options": [
+          "Poesía",
+          "Teatro",
+          "Narrativa",
+          "Ensayo"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/narrativa.jpg"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué obra pertenece al Siglo de Oro español?",
+        "options": [
+          "Cien años de soledad",
+          "La Celestina",
+          "El Lazarillo de Tormes",
+          "Los miserables"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/lazarillo.jpg"
+      },
+      {
+        "id": 5,
+        "question": "¿Qué tipo de palabra es 'rápidamente'?",
+        "options": [
+          "Sustantivo",
+          "Verbo",
+          "Adjetivo",
+          "Adverbio"
+        ],
+        "correctAnswer": 3,
+        "image": "assets/images/adverbio.jpg"
+      },
+      {
+        "id": 6,
+        "question": "¿Quién escribió 'La casa de Bernarda Alba'?",
+        "options": [
+          "Antonio Machado",
+          "Federico García Lorca",
+          "Miguel de Unamuno",
+          "Juan Ramón Jiménez"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/lorca.jpg"
+      },
+      {
+        "id": 7,
+        "question": "¿Qué figura retórica consiste en dar cualidades humanas a objetos inanimados?",
+        "options": [
+          "Metáfora",
+          "Símil",
+          "Personificación",
+          "Hipérbole"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/personificacion.jpg"
+      },
+      {
+        "id": 8,
+        "question": "¿Cuál es el movimiento literario que surgió en el siglo XX?",
+        "options": [
+          "Romanticismo",
+          "Realismo",
+          "Vanguardismo",
+          "Neoclasicismo"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/vanguardismo.jpg"
+      },
+      {
+        "id": 9,
+        "question": "¿Qué tipo de texto es un soneto?",
+        "options": [
+          "Narrativo",
+          "Dramático",
+          "Lírico",
+          "Expositivo"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/soneto.jpg"
+      },
+      {
+        "id": 10,
+        "question": "¿Quién es el autor de 'Cien años de soledad'?",
+        "options": [
+          "Mario Vargas Llosa",
+          "Gabriel García Márquez",
+          "Julio Cortázar",
+          "Jorge Luis Borges"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/garcia-marquez.jpg"
+      }
+    ]
+  },
+  "matematicas": {
+    "id": "matematicas",
+    "name": "Matemáticas",
+    "description": "Descubre la belleza de los números",
+    "image": "assets/images/matematicas.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Cuál es el valor de π (pi) con dos decimales?",
+        "options": [
+          "3.14",
+          "3.16",
+          "3.12",
+          "3.18"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/pi.jpg"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué teorema relaciona los lados de un triángulo rectángulo?",
+        "options": [
+          "Teorema de Tales",
+          "Teorema de Pitágoras",
+          "Teorema de Euclides",
+          "Teorema de Thales"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/pitagoras.jpg"
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es la derivada de x²?",
+        "options": [
+          "x",
+          "2x",
+          "2",
+          "x²"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/derivada.jpg"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué número es primo?",
+        "options": [
+          "4",
+          "6",
+          "7",
+          "8"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/primos.jpg"
+      },
+      {
+        "id": 5,
+        "question": "¿Cuál es el resultado de √16?",
+        "options": [
+          "2",
+          "4",
+          "8",
+          "16"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/raiz.jpg"
+      },
+      {
+        "id": 6,
+        "question": "¿Qué tipo de función es f(x) = x²?",
+        "options": [
+          "Lineal",
+          "Cuadrática",
+          "Exponencial",
+          "Logarítmica"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/parabola.jpg"
+      },
+      {
+        "id": 7,
+        "question": "¿Cuál es el área de un círculo de radio 2?",
+        "options": [
+          "4π",
+          "2π",
+          "8π",
+          "16π"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/circulo.jpg"
+      },
+      {
+        "id": 8,
+        "question": "¿Qué es un número irracional?",
+        "options": [
+          "Un número negativo",
+          "Un número decimal",
+          "Un número que no puede expresarse como fracción",
+          "Un número par"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/irracional.jpg"
+      },
+      {
+        "id": 9,
+        "question": "¿Cuál es la probabilidad de obtener un 6 al lanzar un dado?",
+        "options": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/4"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/dado.jpg"
+      },
+      {
+        "id": 10,
+        "question": "¿Qué es una matriz?",
+        "options": [
+          "Un número",
+          "Una función",
+          "Un conjunto ordenado de números",
+          "Una ecuación"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/matriz.jpg"
+      }
+    ]
+  },
+  "tecnologia": {
+    "id": "tecnologia",
+    "name": "Tecnología y Digitalización",
+    "description": "Explora el futuro digital",
+    "image": "assets/images/tecnologia.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Qué significa HTML?",
+        "options": [
+          "Hyper Text Markup Language",
+          "High Tech Modern Language",
+          "Hyper Transfer Markup Language",
+          "Hyper Text Modern Language"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/html.jpg"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué es un algoritmo?",
+        "options": [
+          "Un programa de computadora",
+          "Un conjunto ordenado de instrucciones",
+          "Un tipo de hardware",
+          "Un lenguaje de programación"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/algoritmo.jpg"
+      },
+      {
+        "id": 3,
+        "question": "¿Qué tipo de memoria es RAM?",
+        "options": [
+          "Memoria permanente",
+          "Memoria de solo lectura",
+          "Memoria de acceso aleatorio",
+          "Memoria externa"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/ram.jpg"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué es la inteligencia artificial?",
+        "options": [
+          "Un tipo de hardware",
+          "Un programa específico",
+          "La simulación de procesos de inteligencia humana",
+          "Un tipo de red"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/ia.jpg"
+      },
+      {
+        "id": 5,
+        "question": "¿Qué es un firewall?",
+        "options": [
+          "Un antivirus",
+          "Un sistema de seguridad de red",
+          "Un tipo de malware",
+          "Un programa de edición"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/firewall.jpg"
+      },
+      {
+        "id": 6,
+        "question": "¿Qué es la nube (cloud computing)?",
+        "options": [
+          "Un tipo de hardware",
+          "Un programa específico",
+          "Servicios informáticos a través de internet",
+          "Un tipo de red local"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/cloud.jpg"
+      },
+      {
+        "id": 7,
+        "question": "¿Qué es un byte?",
+        "options": [
+          "Un bit",
+          "8 bits",
+          "16 bits",
+          "32 bits"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/byte.jpg"
+      },
+      {
+        "id": 8,
+        "question": "¿Qué es la realidad virtual?",
+        "options": [
+          "Un tipo de pantalla",
+          "Un programa de edición",
+          "Un entorno simulado por computadora",
+          "Un tipo de red"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/vr.jpg"
+      },
+      {
+        "id": 9,
+        "question": "¿Qué es un servidor?",
+        "options": [
+          "Un programa de usuario",
+          "Un tipo de red",
+          "Un sistema que proporciona recursos a otros dispositivos",
+          "Un tipo de hardware de almacenamiento"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/servidor.jpg"
+      },
+      {
+        "id": 10,
+        "question": "¿Qué es el Internet de las Cosas (IoT)?",
+        "options": [
+          "Un tipo de red",
+          "Un programa específico",
+          "La interconexión de dispositivos físicos a internet",
+          "Un tipo de hardware"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/iot.jpg"
+      }
+    ]
+  },
+  "fisica": {
+    "id": "fisica",
+    "name": "Física y Química",
+    "description": "Descubre los secretos de la materia",
+    "image": "assets/images/fisica.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Cuál es la unidad de medida de la fuerza?",
+        "options": [
+          "Watt",
+          "Newton",
+          "Pascal",
+          "Joule"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/newton.jpg"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué es la ley de la gravitación universal?",
+        "options": [
+          "Ley de Newton",
+          "Ley de Coulomb",
+          "Ley de Ohm",
+          "Ley de Boyle"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/gravitacion.jpg"
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es el elemento químico más abundante en el universo?",
+        "options": [
+          "Oxígeno",
+          "Carbono",
+          "Hidrógeno",
+          "Helio"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/hidrogeno.jpg"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué es la energía cinética?",
+        "options": [
+          "Energía almacenada",
+          "Energía en movimiento",
+          "Energía térmica",
+          "Energía potencial"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/cinetica.jpg"
+      },
+      {
+        "id": 5,
+        "question": "¿Cuál es la fórmula del agua?",
+        "options": [
+          "CO2",
+          "H2O",
+          "O2",
+          "H2"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/agua.jpg"
+      },
+      {
+        "id": 6,
+        "question": "¿Qué es la ley de Ohm?",
+        "options": [
+          "Ley de la gravitación",
+          "Ley de los gases",
+          "Ley de la corriente eléctrica",
+          "Ley del movimiento"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/ohm.jpg"
+      },
+      {
+        "id": 7,
+        "question": "¿Qué es la tabla periódica?",
+        "options": [
+          "Un tipo de gráfico",
+          "Una lista de elementos",
+          "Una organización de elementos químicos",
+          "Un tipo de ecuación"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/tabla-periodica.jpg"
+      },
+      {
+        "id": 8,
+        "question": "¿Qué es la velocidad de la luz?",
+        "options": [
+          "299,792,458 m/s",
+          "299,792,458 km/h",
+          "299,792,458 m/h",
+          "299,792,458 km/s"
+        ],
+        "correctAnswer": 0,
+        "image": "assets/images/luz.jpg"
+      },
+      {
+        "id": 9,
+        "question": "¿Qué es la energía potencial?",
+        "options": [
+          "Energía en movimiento",
+          "Energía almacenada",
+          "Energía térmica",
+          "Energía cinética"
+        ],
+        "correctAnswer": 1,
+        "image": "assets/images/potencial.jpg"
+      },
+      {
+        "id": 10,
+        "question": "¿Qué es la ley de conservación de la energía?",
+        "options": [
+          "La energía se crea",
+          "La energía se destruye",
+          "La energía se transforma",
+          "La energía desaparece"
+        ],
+        "correctAnswer": 2,
+        "image": "assets/images/conservacion.jpg"
+      }
+    ]
+  }
+} 

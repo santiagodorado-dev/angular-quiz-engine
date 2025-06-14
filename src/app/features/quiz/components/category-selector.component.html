@@ -1,0 +1,45 @@
+<div class="category-container fade-in">
+  <div class="header-section">
+    <h2 class="subtitle">Menú de Asignaturas</h2>
+  </div>
+  
+  @if (loading) {
+    <div class="loading">Cargando materias...</div>
+  } @else if (error) {
+    <div class="error">{{ error }}</div>
+  } @else if (categories.length === 0) {
+    <div class="no-categories">No hay materias disponibles</div>
+  } @else {
+    <div class="categories-grid">
+      @for (category of categories; track category.name) {
+        <div class="category-card" 
+             [ngClass]="getCategoryClass(category.name)"
+             (click)="selectCategory(category)">
+          <div class="category-icon">
+            @switch (category.name) {
+              @case ('Biología y Geología') { 🧬 }
+              @case ('Geografía e Historia') { 🗺️ }
+              @case ('Lengua Castellana y Literatura') { 📚 }
+              @case ('Matemáticas') { ➗ }
+              @case ('Tecnología y Digitalización') { 💻 }
+              @case ('Física y Química') { ⚛️ }
+              @default { 📝 }
+            }
+          </div>
+          <h2 class="category-name">{{ category.name }}</h2>
+          <p class="question-count">{{ category.questions.length }} preguntas</p>
+        </div>
+      }
+    </div>
+  }
+
+  <div class="github-section">
+    <p class="github-text">¿Te gustó esta aplicación?</p>
+    <a href="https://github.com/tu-usuario/angular-quiz-engine" 
+       target="_blank" 
+       class="github-button">
+      <span class="github-icon">⭐</span>
+      Déjame una estrella en GitHub
+    </a>
+  </div>
+</div> 

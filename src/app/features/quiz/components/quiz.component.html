@@ -1,0 +1,61 @@
+<div class="quiz-container">
+  <header class="quiz-header">
+    <h1 class="quiz-title">{{ quiz.title }}</h1>
+  </header>
+
+  <main class="quiz-content">
+    <div class="question-container">
+      <div class="question-header">
+        <h2 class="question-text">{{ currentQuestion.text }}</h2>
+      </div>
+
+      <div class="question-content">
+        <ul class="options-list">
+          <li class="option-item" *ngFor="let option of currentQuestion.options; let i = index">
+            <button 
+              class="option-btn"
+              [class.selected]="selectedOption === option"
+              [class.correct]="showFeedback && option === currentQuestion.correctAnswer"
+              [class.incorrect]="showFeedback && selectedOption === option && option !== currentQuestion.correctAnswer"
+              (click)="selectOption(option)"
+              [disabled]="showFeedback">
+              <span class="option-letter">{{ getOptionLetter(i) }}</span>
+              <span class="option-text">{{ option }}</span>
+              <span class="option-icon">
+                <i class="fas" [class.fa-check]="showFeedback && option === currentQuestion.correctAnswer"
+                   [class.fa-times]="showFeedback && selectedOption === option && option !== currentQuestion.correctAnswer"></i>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="quiz-footer">
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" [style.width.%]="progress"></div>
+      </div>
+      <span class="progress-text">{{ currentQuestionIndex + 1 }}/{{ quiz.questions.length }}</span>
+    </div>
+
+    <div class="navigation-buttons">
+      <button 
+        class="nav-btn secondary"
+        (click)="previousQuestion()"
+        [disabled]="currentQuestionIndex === 0">
+        <i class="fas fa-arrow-left btn-icon"></i>
+        Anterior
+      </button>
+
+      <button 
+        class="nav-btn primary"
+        (click)="nextQuestion()"
+        [disabled]="!selectedOption">
+        Siguiente
+        <i class="fas fa-arrow-right btn-icon"></i>
+      </button>
+    </div>
+  </footer>
+</div> 
