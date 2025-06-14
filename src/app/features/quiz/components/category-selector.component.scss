@@ -3,37 +3,37 @@
   margin: 0 auto;
   padding: 1rem;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a237e, #0d47a1);
+  background: var(--primary-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease;
 }
 
 .header-section {
   text-align: center;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--card-border);
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow);
   width: 100%;
   max-width: 800px;
+  transition: all 0.3s ease;
 }
 
 .subtitle {
   font-size: 2rem;
-  color: #fff;
+  color: var(--secondary-color);
   margin: 0;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to right, #fff, #e3f2fd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
 }
 
 .categories-grid {
@@ -46,7 +46,7 @@
 }
 
 .category-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
   border-radius: 16px;
   padding: 1.5rem;
   cursor: pointer;
@@ -58,8 +58,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .category-card::before {
@@ -100,7 +100,7 @@
 
 .category-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .category-card:hover::before {
@@ -110,9 +110,9 @@
 .category-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--secondary-color);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .category-card:hover .category-icon {
@@ -122,10 +122,11 @@
 .category-name {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--secondary-color);
   margin-bottom: 0.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
 .question-count {

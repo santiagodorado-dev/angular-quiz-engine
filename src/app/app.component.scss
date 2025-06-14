@@ -60,9 +60,10 @@ p {
   padding: 1rem;
   box-sizing: inherit;
   position: relative;
-  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-  color: #f1f5f9;
+  background: var(--primary-bg);
+  color: var(--primary-color);
   font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .angular-logo {

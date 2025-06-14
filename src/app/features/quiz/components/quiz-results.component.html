@@ -1,52 +1,54 @@
 <div class="results-container">
-  <div class="results-card" *ngIf="result">
-    <h2>Resultados del Quiz</h2>
-    <div class="score-section">
-      <div class="score-circle" [ngClass]="getScoreClass()">
-        <span class="score-value">{{result.score}}%</span>
+  @if (result) {
+    <div class="results-card">
+      <h2 class="results-title">Resultados del Quiz</h2>
+      <div class="score-section">
+        <div class="score-circle" [ngClass]="getScoreClass()">
+          <span class="score-value">{{result.score}}%</span>
+        </div>
+        <p class="score-message">{{result.message}}</p>
       </div>
-      <p class="score-message">{{result.message}}</p>
-    </div>
-    
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-icon">📊</div>
-        <div class="stat-value">{{result.totalQuestions}}</div>
-        <div class="stat-label">Preguntas totales</div>
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">📊</div>
+          <div class="stat-value">{{result.totalQuestions}}</div>
+          <div class="stat-label">Preguntas totales</div>
+        </div>
+        <div class="stat-item correct">
+          <div class="stat-icon">✅</div>
+          <div class="stat-value">{{result.correctAnswers}}</div>
+          <div class="stat-label">Respuestas correctas</div>
+        </div>
+        <div class="stat-item incorrect">
+          <div class="stat-icon">❌</div>
+          <div class="stat-value">{{result.incorrectAnswers}}</div>
+          <div class="stat-label">Respuestas incorrectas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-value">{{formatTime(result.timeSpent)}}</div>
+          <div class="stat-label">Tiempo empleado</div>
+        </div>
       </div>
-      <div class="stat-item correct">
-        <div class="stat-icon">✅</div>
-        <div class="stat-value">{{result.correctAnswers}}</div>
-        <div class="stat-label">Respuestas correctas</div>
-      </div>
-      <div class="stat-item incorrect">
-        <div class="stat-icon">❌</div>
-        <div class="stat-value">{{result.incorrectAnswers}}</div>
-        <div class="stat-label">Respuestas incorrectas</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-icon">⏱️</div>
-        <div class="stat-value">{{formatTime(result.timeSpent)}}</div>
-        <div class="stat-label">Tiempo empleado</div>
-      </div>
-    </div>
 
-    <div class="category-section">
-      <div class="category-label">Materia</div>
-      <div class="category-value">{{result.category}}</div>
-    </div>
+      <div class="category-section">
+        <div class="category-label">Materia</div>
+        <div class="category-value">{{result.category}}</div>
+      </div>
 
-    <div class="actions-section">
-      <button class="action-button retry" (click)="retryQuiz()">
-        <span class="button-icon"></span>
-        Repetir Quiz
-      </button>
-      <button class="action-button home" (click)="returnToMain()">
-        <span class="button-icon"></span>
-        Volver al Panel Principal
-      </button>
+      <div class="actions-section">
+        <button class="action-button retry" (click)="retryQuiz()">
+          <span class="button-icon"></span>
+          Repetir Quiz
+        </button>
+        <button class="action-button home" (click)="returnToMain()">
+          <span class="button-icon"></span>
+          Volver al Panel Principal
+        </button>
+      </div>
     </div>
-  </div>
+  }
 </div>
 
 <div class="github-section">

@@ -1,4 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables CSS para temas */
+:root[data-theme="light"] {
+  /* Main Colors */
+  --primary-bg: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  --primary-color: #f1f5f9;
+  --secondary-bg: rgba(255, 255, 255, 0.1);
+  --secondary-color: #ffffff;
+  
+  /* Cards */
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.2);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  
+  /* Questions */
+  --question-bg: white;
+  --question-color: #0d47a1;
+  --question-text-bg: rgba(13, 71, 161, 0.05);
+  --options-bg: rgba(0, 0, 0, 0.02);
+  --feedback-bg: rgba(0, 0, 0, 0.05);
+  
+  /* Category colors */
+  --category-color: #ffffff;
+  --category-bg: #1976d2;
+  --category-border: #0d47a1;
+  
+  /* Buttons */
+  --button-primary: #007bff;
+  --button-primary-hover: #0056b3;
+  --button-success: #4caf50;
+  --button-error: #f44336;
+  --button-border: #e0e0e0;
+  --button-border-hover: #007bff;
+  --button-selected: #2196f3;
+  
+  /* Toggle */
+  --toggle-bg: rgba(255, 255, 255, 0.9);
+  --toggle-color: #1a237e;
+  --toggle-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --toggle-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-theme="dark"] {
+  /* Main Colors */
+  --primary-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  --primary-color: #e2e8f0;
+  --secondary-bg: rgba(15, 23, 42, 0.8);
+  --secondary-color: #f1f5f9;
+  
+  /* Cards */
+  --card-bg: rgba(15, 23, 42, 0.9);
+  --card-border: rgba(100, 116, 139, 0.3);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --card-hover-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  
+  /* Questions */
+  --question-bg: #1e293b;
+  --question-color: #64b5f6;
+  --question-text-bg: rgba(100, 181, 246, 0.1);
+  --options-bg: rgba(30, 41, 59, 0.5);
+  --feedback-bg: rgba(30, 41, 59, 0.7);
+  
+  /* Category colors */
+  --category-color: #e2e8f0;
+  --category-bg: #1e293b;
+  --category-border: #3b82f6;
+  
+  /* Buttons */
+  --button-primary: #3b82f6;
+  --button-primary-hover: #2563eb;
+  --button-success: #10b981;
+  --button-error: #ef4444;
+  --button-border: #475569;
+  --button-border-hover: #3b82f6;
+  --button-selected: #2563eb;
+  
+  /* Toggle */
+  --toggle-bg: rgba(30, 41, 59, 0.9);
+  --toggle-color: #fbbf24;
+  --toggle-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  --toggle-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
@@ -10,7 +92,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #333;
+  background: var(--primary-bg);
+  color: var(--primary-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 button {

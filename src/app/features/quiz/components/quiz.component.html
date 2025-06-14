@@ -11,22 +11,24 @@
 
       <div class="question-content">
         <ul class="options-list">
-          <li class="option-item" *ngFor="let option of currentQuestion.options; let i = index">
-            <button 
-              class="option-btn"
-              [class.selected]="selectedOption === option"
-              [class.correct]="showFeedback && option === currentQuestion.correctAnswer"
-              [class.incorrect]="showFeedback && selectedOption === option && option !== currentQuestion.correctAnswer"
-              (click)="selectOption(option)"
-              [disabled]="showFeedback">
-              <span class="option-letter">{{ getOptionLetter(i) }}</span>
-              <span class="option-text">{{ option }}</span>
-              <span class="option-icon">
-                <i class="fas" [class.fa-check]="showFeedback && option === currentQuestion.correctAnswer"
-                   [class.fa-times]="showFeedback && selectedOption === option && option !== currentQuestion.correctAnswer"></i>
-              </span>
-            </button>
-          </li>
+          @for (option of currentQuestion.options; track $index) {
+            <li class="option-item">
+              <button 
+                class="option-btn"
+                [class.selected]="selectedOption === option"
+                [class.correct]="showFeedback && option === currentQuestion.correctAnswer"
+                [class.incorrect]="showFeedback && selectedOption === option && option !== currentQuestion.correctAnswer"
+                (click)="selectOption(option)"
+                [disabled]="showFeedback">
+                <span class="option-letter">{{ getOptionLetter($index) }}</span>
+                <span class="option-text">{{ option }}</span>
+                <span class="option-icon">
+                  <i class="fas" [class.fa-check]="showFeedback && option === currentQuestion.correctAnswer"
+                     [class.fa-times]="showFeedback && selectedOption === option && option !== currentQuestion.correctAnswer"></i>
+                </span>
+              </button>
+            </li>
+          }
         </ul>
       </div>
     </div>

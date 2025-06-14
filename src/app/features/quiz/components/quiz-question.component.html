@@ -1,49 +1,57 @@
-<div class="quiz-container" *ngIf="currentQuestion">
-  <div class="quiz-header">
-    <span class="category">{{ currentQuestion.category }}</span>
-    <span class="question-number">Pregunta {{ currentIndex + 1 }} de {{ totalQuestions }}</span>
-  </div>
-
-  <div class="progress-bar">
-    <div class="progress" [style.width.%]="progress"></div>
-  </div>
-
-  <div class="question-card">
-    <h2 class="question-text">{{ currentQuestion.text }}</h2>
-
-    <div class="options-container">
-      <button
-        *ngFor="let option of currentQuestion.options"
-        class="option-button"
-        [class.selected]="selectedAnswer === option"
-        [class.correct]="showFeedback && option === currentQuestion.correctAnswer"
-        [class.incorrect]="showFeedback && selectedAnswer === option && option !== currentQuestion.correctAnswer"
-        [disabled]="showFeedback"
-        (click)="selectAnswer(option)"
-      >
-        {{ option }}
-      </button>
+@if (currentQuestion) {
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <span class="category">{{ currentQuestion.category }}</span>
+      <span class="question-number">Pregunta {{ currentIndex + 1 }} de {{ totalQuestions }}</span>
     </div>
 
-    <div class="feedback" *ngIf="showFeedback">
-      <p [class.correct]="isCorrect" [class.incorrect]="!isCorrect">
-        {{ isCorrect ? '¡Correcto!' : 'Incorrecto. La respuesta correcta es: ' + currentQuestion.correctAnswer }}
-      </p>
+    <div class="progress-bar">
+      <div class="progress" [style.width.%]="progress"></div>
     </div>
 
-    <div class="navigation">
-      <button
-        class="next-button"
-        *ngIf="showFeedback"
-        (click)="nextQuestion()"
-      >
-        {{ isLastQuestion ? 'Ver resultados' : 'Siguiente pregunta' }}
-      </button>
+    <div class="question-card">
+      <h2 class="question-text">{{ currentQuestion.text }}</h2>
+
+      <div class="options-container">
+        @for (option of currentQuestion.options; track option) {
+          <button
+            class="option-button"
+            [class.selected]="selectedAnswer === option"
+            [class.correct]="showFeedback && option === currentQuestion.correctAnswer"
+            [class.incorrect]="showFeedback && selectedAnswer === option && option !== currentQuestion.correctAnswer"
+            [disabled]="showFeedback"
+            (click)="selectAnswer(option)"
+          >
+            {{ option }}
+          </button>
+        }
+      </div>
+
+      @if (showFeedback) {
+        <div class="feedback">
+          <p [class.correct]="isCorrect" [class.incorrect]="!isCorrect">
+            {{ isCorrect ? '¡Correcto!' : 'Incorrecto. La respuesta correcta es: ' + currentQuestion.correctAnswer }}
+          </p>
+        </div>
+      }
+
+      <div class="navigation">
+        @if (showFeedback) {
+          <button
+            class="next-button"
+            (click)="nextQuestion()"
+          >
+            {{ isLastQuestion ? 'Ver resultados' : 'Siguiente pregunta' }}
+          </button>
+        }
+      </div>
     </div>
   </div>
-</div>
+}
 
-<div class="loading-container" *ngIf="!currentQuestion">
-  <div class="loading-spinner"></div>
-  <p>Cargando pregunta...</p>
-</div> 
+@if (!currentQuestion) {
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+    <p>Cargando pregunta...</p>
+  </div>
+} 
